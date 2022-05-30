@@ -5,17 +5,17 @@ import Card from '../components/Card.astro';
 
 <Layout title="Venetia Production">
 	<main>
-		<section id="video" class="flex flex-col sm:flex-row sm:items-end max-h-[calc(100vh_-_96px)]">
+		<div class="h-[96px] w-full"></div>
+		<section id="video" class="flex flex-col md:flex-row md:items-end max-h-[calc(100vh_-_96px)]">
 			<video autoplay muted loop class="w-full max-w-[1360px]">
 				<source src="/videoplayback.mp4" type="video/mp4">
 			</video>
-			<div
-				class="flex justify-center mt-5 mb-2 text-lg font-extralight sm:flex-col sm:justify-end sm:ml-5 sm:mt-0 sm:min-w-[10%]">
+			<div class="flex justify-center mt-5 mb-2 text-lg font-extralight md:flex-col md:justify-end md:mx-5 md:mt-0">
 				<a href="about" class="text-lg font-extralight tracking-wider relative w-max one">
 					o nás
 					<span class="absolute -bottom-0 left-0 w-0 transition-all h-px bg-stone-700 duration-500"></span>
 				</a>
-				<a href="reference" class="mx-5 text-lg font-extralight tracking-wider relative w-max one sm:m-0">
+				<a href="reference" class="mx-5 text-lg font-extralight tracking-wider relative w-max one md:m-0">
 					reference
 					<span class="absolute -bottom-0 left-0 w-0 transition-all h-px bg-stone-700 duration-500"></span>
 				</a>
