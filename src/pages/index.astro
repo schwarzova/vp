@@ -5,16 +5,16 @@ import Card from '../components/Card.astro';
 
 <Layout title="Venetia Production">
 	<main>
-		<section id="video" class="h-[calc(100vh_-_96px)] flex items-end">
-			<video width="82%" autoplay muted loop>
-				<source src="../../public/videoplayback.mp4" type="video/mp4">
+		<section id="video" class="flex flex-col sm:flex-row sm:items-end lg:h-[calc(100vh_-_96px)]">
+			<video autoplay muted loop class="w-[100%] sm:w-[82%]">
+				<source src="/videoplayback.mp4" type="video/mp4">
 			</video>
-			<div class="flex flex-col ml-5 mb-2 justify-end text-lg font-extralight">
+			<div class="flex justify-center mt-5 mb-2 text-lg font-extralight sm:flex-col sm:justify-end sm:ml-5 sm:mt-0">
 				<a href="about" class="text-lg font-extralight tracking-wider relative w-max one">
 					o nás
 					<span class="absolute -bottom-0 left-0 w-0 transition-all h-px bg-stone-700 duration-500"></span>
 				</a>
-				<a href="reference" class="text-lg font-extralight tracking-wider relative w-max one">
+				<a href="reference" class="mx-5 text-lg font-extralight tracking-wider relative w-max one sm:m-0">
 					reference
 					<span class="absolute -bottom-0 left-0 w-0 transition-all h-px bg-stone-700 duration-500"></span>
 				</a>
@@ -24,7 +24,7 @@ import Card from '../components/Card.astro';
 				</a>
 			</div>
 		</section>
-		<section id="about" class="h-40">...</section>
+		<!-- <section id="about" class="h-40">...</section> -->
 	</main>
 </Layout>
 
