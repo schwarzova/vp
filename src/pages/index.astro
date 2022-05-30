@@ -5,11 +5,12 @@ import Card from '../components/Card.astro';
 
 <Layout title="Venetia Production">
 	<main>
-		<section id="video" class="flex flex-col sm:flex-row sm:items-end lg:h-[calc(100vh_-_96px)]">
-			<video autoplay muted loop class="w-[100%] sm:w-[82%]">
+		<section id="video" class="flex flex-col sm:flex-row sm:items-end max-h-[calc(100vh_-_96px)]">
+			<video autoplay muted loop class="w-full max-w-[1360px]">
 				<source src="/videoplayback.mp4" type="video/mp4">
 			</video>
-			<div class="flex justify-center mt-5 mb-2 text-lg font-extralight sm:flex-col sm:justify-end sm:ml-5 sm:mt-0">
+			<div
+				class="flex justify-center mt-5 mb-2 text-lg font-extralight sm:flex-col sm:justify-end sm:ml-5 sm:mt-0 sm:min-w-[10%]">
 				<a href="about" class="text-lg font-extralight tracking-wider relative w-max one">
 					o nás
 					<span class="absolute -bottom-0 left-0 w-0 transition-all h-px bg-stone-700 duration-500"></span>
