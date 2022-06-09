@@ -1,7 +1,6 @@
 ---
+import Navigation from '../components/Navigation/Navigation';
 import '../styles/globals.css';
-
-import Navigation from "../components/Navigation.astro";
 
 export type Props = {
   title: string;
@@ -19,8 +18,9 @@ const { title } = Astro.props as Props;
   <link rel="icon" type="image/x-icon" href="/icon.png" />
   <title>{title}</title>
 </head>
-<header>
-  <Navigation />
+<!-- to make menu sticky remove relative -->
+<header class="relative">
+  <Navigation client:load />
 </header>
 
 <body>
