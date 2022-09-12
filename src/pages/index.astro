@@ -3,33 +3,88 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Venetia Production">
-	<main>
-		<div class="h-[96px] w-full"></div>
-		<section id="video" class="flex flex-col md:flex-row md:items-end max-h-[calc(100vh_-_96px)]">
-			<video autoplay muted loop class="w-full max-w-[1360px]">
-				<source src="/videoplayback.mp4" type="video/mp4">
-			</video>
-			<div class="flex justify-center mt-5 mb-2 text-lg font-extralight md:flex-col md:justify-end md:mx-5 md:mt-0">
-				<a href="about" class="text-lg font-extralight tracking-wider relative w-max one">
-					o nás
-					<span class="absolute -bottom-0 left-0 w-0 transition-all h-px bg-stone-700 duration-500"></span>
-				</a>
-				<a href="reference" class="mx-5 text-lg font-extralight tracking-wider relative w-max one md:m-0">
-					reference
-					<span class="absolute -bottom-0 left-0 w-0 transition-all h-px bg-stone-700 duration-500"></span>
-				</a>
-				<a href="kontakt" class="text-lg font-extralight tracking-wider relative w-max one">
-					kontakt
-					<span class="absolute -bottom-0 left-0 w-0 transition-all h-px bg-stone-700 duration-500"></span>
-				</a>
-			</div>
-		</section>
-		<section id="about" class="h-40">...</section>
-	</main>
+  <main>
+    <div class="h-[96px] w-full"></div>
+    <section
+      id="video"
+      class="flex flex-col md:flex-row md:items-end max-h-[calc(100vh_-_96px)]"
+    >
+      <video autoplay muted loop class="w-full max-w-[1360px]">
+        <source src="/videoplayback.mp4" type="video/mp4" />
+      </video>
+      <div
+        class="flex justify-center mt-5 mb-2 text-lg font-extralight md:flex-col md:justify-end md:mx-5 md:mt-0"
+      >
+        <a
+          href="about"
+          class="text-lg font-extralight tracking-wider relative w-max one"
+        >
+          o nás
+          <span
+            class="absolute -bottom-0 left-0 w-0 transition-all h-px bg-stone-700 duration-500"
+          ></span>
+        </a>
+        <a
+          href="reference"
+          class="mx-5 text-lg font-extralight tracking-wider relative w-max one md:m-0"
+        >
+          reference
+          <span
+            class="absolute -bottom-0 left-0 w-0 transition-all h-px bg-stone-700 duration-500"
+          ></span>
+        </a>
+        <a
+          href="kontakt"
+          class="text-lg font-extralight tracking-wider relative w-max one"
+        >
+          kontakt
+          <span
+            class="absolute -bottom-0 left-0 w-0 transition-all h-px bg-stone-700 duration-500"
+          ></span>
+        </a>
+      </div>
+    </section>
+    <section id="about">
+      <h2 class="relative">
+        O nás
+        <span class="absolute bottom-[10px] w-[127px] left-0 h-px bg-stone-700"
+        ></span>
+      </h2>
+      <div class="flex">
+        <p class="paragraph-about">
+          fLorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged.
+        </p>
+        <div class="circle-el">
+          <div class="half-circle relative">
+            <span class="circle-web absolute bottom-[10px] left-[50px]"
+              >web</span
+            >
+          </div>
+          <div class="half-circle-down relative">
+            <span class="circle-video absolute top-[10px] left-[100px]"
+              >video</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="reference">
+      <h2 class="relative">
+        Reference
+        <span class="absolute bottom-[10px] w-[217px] left-0 h-px bg-stone-700"
+        ></span>
+      </h2>
+    </section>
+  </main>
 </Layout>
 
 <style>
-	.one:hover span:last-child {
-		width: 100%;
-	}
+  .one:hover span:last-child {
+    width: 100%;
+  }
 </style>

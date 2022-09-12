@@ -11,6 +11,10 @@ body {
   overflow-x: hidden;
 }
 
+h2 {
+  font-size: 3rem !important;
+}
+
 .menu-list {
   list-style: none;
   margin:0;
@@ -38,6 +42,68 @@ body {
 .menu-list a:hover span {
    transform: rotateY(180deg);
    cursor: pointer;
+}
+
+#about {
+  padding: 90px 40px;
+}
+
+.paragraph-about {
+  max-width: 40%;
+}
+
+.half-circle {
+  cursor: pointer;
+  width: 200px;
+  height: 100px;
+  background-color: transparent;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border: 1px solid rgb(68 64 60 / 1);
+  border-bottom: 0;
+  transition: all 1.4s;
+  color: transparent;
+  border-color: transparent;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px;
+}
+
+.half-circle:hover {
+  margin-bottom: 20px;
+  background-color: #090909;
+  color: white;
+}
+
+.half-circle-down {
+  width: 200px;
+  height: 100px;
+  background-color: white;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border: 0px solid white;
+  border-top: 0;
+  transition: all 1.4s;
+  cursor: pointer;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px;
+}
+
+.half-circle-down:hover {
+  margin-top: 20px;
+  background-color: #565656;
+  color: black;
+}
+
+.circle-el {
+  transform: rotate(-10deg);
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 250px;
+  margin-top: -40px;
+}
+
+#reference {
+  padding: 0 40px 90px 40px;
 }
 
 /* width */
